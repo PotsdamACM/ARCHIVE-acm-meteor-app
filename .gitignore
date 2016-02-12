@@ -61,7 +61,7 @@ tramp
 .cask/
 
 # server auth directory
-/server/
+# /server/
 
 
 ### Eclipse ###
