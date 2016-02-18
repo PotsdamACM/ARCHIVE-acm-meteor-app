@@ -36,3 +36,6 @@ In order to work on the site at its current state you need:
 
 ## Tests
 We are currently researching appropriate unit, integration, and acceptance test apis. If you have any suggestions, let us know in the issues.
+
+## Workflow
+We are using waffle.io to manage this project using simple KANBAN styled boards. If you would like to join the board, simply go to the link [here](https://waffle.io/SUNYPotsdamACM/acm-meteor-app/join).
