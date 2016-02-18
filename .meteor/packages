@@ -21,3 +21,4 @@ insecure                # Allow all DB writes from clients (for prototyping)
 natestrauser:animate-css
 fourseven:scss
 ecwyne:polymer-elements
+materialize:materialize
