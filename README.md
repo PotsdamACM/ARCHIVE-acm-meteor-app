@@ -1,5 +1,7 @@
 # SUNY Potsdam ACM Meteor App
 
+[![Throughput Graph](https://graphs.waffle.io/SUNYPotsdamACM/acm-meteor-app/throughput.svg)](https://waffle.io/SUNYPotsdamACM/acm-meteor-app/metrics)
+
 ## Description
 Website for the SUNY Potsdam ACM chapter with the meteorjs framework.
 
