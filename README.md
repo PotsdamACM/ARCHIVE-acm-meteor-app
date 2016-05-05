@@ -8,11 +8,15 @@ Website for the SUNY Potsdam ACM chapter with the meteorjs framework.
 ## Planned Implementation
 ### Pages
 - About
-- Activity Feed
+- Meeting Minutes
 - Projects
-- Lightning Talks
+- Talks
 - Events
+- Sponors
+- Donate
 - Contact
+
+See our [sitemap](https://docs.google.com/drawings/d/1zsIq4WSfCG9YO2Z7LH9PcivrvjwjPl7mJZOWjMRg8Z4/edit?usp=sharing).
 
 ## Technologies
 - Meteorjs
