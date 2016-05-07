@@ -2,7 +2,18 @@
   <div class="container">
     <main>
       <h1>Talks <small>Page</small></h1>
-      {{> quickForm collection="Talks" id="insertTalkForm" type="insert"}}
+
+      <!-- Modal Trigger -->
+      <button data-target="modal1" class="btn modal-trigger">Add</button>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Add a Talk</h4>
+          {{> quickForm collection="Talks" id="insertTalkForm" type="insert"}}
+        </div>
+      </div>
     </main>
   </div>
 </template>
+
