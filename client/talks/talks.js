@@ -6,9 +6,8 @@ Template.talks.events({
     $('#modal1').openModal();
   },
 
-  // additional functionality for the submit button on the form. this
-  // button will also close the modal window when this button is clicked.
-  'click .btn-primary': function(e) {
+  // cancel button on the talks form will close the modal window.
+  'click .close': function(e) {
     $('#modal1').closeModal();
   }
 });

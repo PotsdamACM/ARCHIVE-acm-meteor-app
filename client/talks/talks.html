@@ -10,7 +10,14 @@
       <div id="modal1" class="modal">
         <div class="modal-content">
           <h4>Add a Talk</h4>
-          {{> quickForm collection="Talks" id="insertTalkForm" type="insert"}}
+          {{#autoForm collection="Talks" id="insertTalkForm" type="insert"}}
+            {{> afQuickFields}}
+            <div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset" class="btn btn-default">Reset</button>
+              <button type="button" class="btn btn-default close">Close</button>
+            </div>
+          {{/autoForm}}
         </div>
       </div>
 
