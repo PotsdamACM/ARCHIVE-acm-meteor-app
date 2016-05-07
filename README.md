@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/PotsdamACM/acm-meteor-app.png?label=ready&title=Ready)](https://waffle.io/PotsdamACM/acm-meteor-app)
 # SUNY Potsdam ACM Meteor App
 
 [![Throughput Graph](https://graphs.waffle.io/SUNYPotsdamACM/acm-meteor-app/throughput.svg)](https://waffle.io/SUNYPotsdamACM/acm-meteor-app/metrics)
