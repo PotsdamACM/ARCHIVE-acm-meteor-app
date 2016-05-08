@@ -1,3 +1,16 @@
+<!--
+  Main layout of the website pages. This file handles all external imports
+  and the main structure of the website.
+
+  Under the div "bodyDiv", the three main HTML5 sections are laid out:
+  - header: includes the top navigation bar
+  - main: includes all primary content for the page
+    * Note: check out home.html or talks.html as an example of primary content
+  - footer: includes the bottom page footer
+
+  This file is templated so it can be used properly by iron-router.
+-->
+
 <template name="layout">
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -14,17 +27,26 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
-  <body>
+
+  <!-- 
+    Think of this as a body tag. We cannot use an actual body tag here because
+    it will create a conflict that prevents the web pages from loading
+  -->
+  <div id="bodyDiv">
+    
     <header>
       {{> navigation}}
     </header>
+    
     <main>
       <div class="container">
         {{> yield}}
       </div>
     </main>
+
     <footer>
       {{> footer}}
     </footer>
-  </body>
+
+  </div>
 </template>

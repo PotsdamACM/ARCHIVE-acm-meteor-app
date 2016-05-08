@@ -1,9 +1,15 @@
-body {
+/*
+  Ensures that the footer will stick to the bottom of the page.
+*/
+#bodyDiv {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
+/*
+  See above comment.
+*/
 main {
   flex: 1 0 auto;
 }
