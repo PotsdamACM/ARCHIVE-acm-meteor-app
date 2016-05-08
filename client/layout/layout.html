@@ -2,11 +2,17 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   </head>
-  <header>
-    {{> navigation}}
-  </header>
-  <div class="container">
-    {{> yield}}
-  </div>
-  {{> footer}}
+  <body>
+    <header>
+      {{> navigation}}
+    </header>
+    <main>
+      <div class="container">
+        {{> yield}}
+      </div>
+    </main>
+    <footer>
+      {{> footer}}
+    </footer>
+  </body>
 </template>
