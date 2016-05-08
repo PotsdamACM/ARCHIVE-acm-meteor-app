@@ -9,7 +9,6 @@ Website for the SUNY Potsdam ACM chapter with the meteorjs framework.
 ## Planned Implementation
 ### Pages
 - About
-- Meeting Minutes
 - Projects
 - Talks
 - Events
@@ -23,9 +22,10 @@ See our [sitemap](https://docs.google.com/drawings/d/1zsIq4WSfCG9YO2Z7LH9Pcivrvj
 - Meteorjs
 - HTML5
 - SASS
-- Bootstrap
-- *Angularjs*
-- *Expressjs*
+- Materialize
+- Blaze
+
+You can find the packages we use for meteor js by cloning the repository and typing `meteor list`.
 
 ## Requirements
 In order to work on the site at its current state you need:
@@ -42,7 +42,7 @@ In order to work on the site at its current state you need:
 6. See the [Google Style Guides](https://github.com/google/styleguide) for HTML, CSS, and JavaScript formatting.
 
 ## Tests
-We are currently researching appropriate unit, integration, and acceptance test apis. If you have any suggestions, let us know in the issues.
+Meteor JS has built in testing API as of version 1.3. [Here is there testing Guide](http://guide.meteor.com/testing.html)!
 
 ## Workflow
 We are using waffle.io to manage this project using simple KANBAN styled boards. If you would like to join the board, simply go to the link [here](https://waffle.io/SUNYPotsdamACM/acm-meteor-app/join).
