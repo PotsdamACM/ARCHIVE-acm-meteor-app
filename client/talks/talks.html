@@ -2,6 +2,53 @@
   <div class="container">
     <main>
       <h1>Talks <small>Page</small></h1>
+      	<div class="row">
+	    {{#each talks}}
+		    {{> talk}} 
+	    {{/each}}
+		</div>
+
+      <!-- Modal Trigger -->
+      <button data-target="modal1" class="btn modal-trigger">Add</button>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Add a Talk</h4>
+          {{#autoForm collection="Talks" id="insertTalkForm" type="insert"}}
+            {{> afQuickFields}}
+            <div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset" class="btn btn-default">Reset</button>
+              <button type="button" class="btn btn-default close">Close</button>
+            </div>
+          {{/autoForm}}
+        </div>
+      </div>
     </main>
   </div>
+</template>
+
+<template name="talk">
+{{#if dateCheck date}}
+<div class="col s12 m6">
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <p><span class="card-title">{{talkName}}</span></p>
+      <strong>Date: </strong>
+      <p>{{formatDate date}}</p>
+      <strong>Keywords: </strong>
+      <p>{{talkKeywords}}</p>
+      <strong>Description: </strong>
+      <p>{{description}}</p>
+    </div>
+    <!-- If there as a URL, then display it in a box at the bottom -->
+    {{#if url}}
+    <div class="card-action">
+      <a href="{{url}}">{{url}}</a>
+    </div>
+    {{/if}}
+   </div>
+  </div>
+  {{/if}}
 </template>
